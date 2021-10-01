@@ -22,7 +22,7 @@ def get_histo(image):
     print('End of the histogram processing!')
     return histo
 #obtention du seuil d'une image pour sa binarisation
-def get_seuil(image):
+def get_seuil(image, sensibility):
     print('Treshold processing... ')
     definition = image.size
     somme = 0
@@ -52,20 +52,29 @@ def get_seuil(image):
 
     seuil = (z[0] + z[1])/2
     print('End of the treshold processing!')
-    return seuil
+    if (seuil < sensibility):
+       return 0 
+    else:
+       return seuil-sensibility
 #binarisation d'une image
 #!!! Attention, certaine fois la binarisation est inversé
-def gray2bin(image):
+def gray2bin(image, sensibility = 0, invert = False):
     print('Binarisation processing... ')
-    seuil = get_seuil(image)
+    seuil = get_seuil(image, sensibility)
     definition = image.size
     new_image = np.zeros((definition[1], definition[0]))
     for y in range(definition[1]):
         for x in range(definition[0]):
             if get_gray_pix(image, (x, y)) > seuil:
-                new_image[y][x] = 1
+                if invert == True:
+                  new_image[y][x] = 0
+                else:
+                  new_image[y][x] = 1
             else:
-                new_image[y][x] = 0
+                if invert == True:
+                  new_image[y][x] = 1
+                else:
+                  new_image[y][x] = 0
     print('End of the binarisation processing!')
     return new_image
 #errodation d'une image binarisé
@@ -294,3 +303,28 @@ def isolate_object(image,color):
             if image[x][y] == color:
                 new_image[x][y] = 1
     return new_image
+# retourne la couleur principal d'une image sur un masque
+def identify_color(image_colored, mask):
+  definition = image.size
+  average_color = (0,0,0)
+  compteur = 0
+  for y in range(definition[1]):
+    for x in range(definition[0]):
+      if mask[y][x] == 1:
+        color = image.getpixel((x,y))
+        average_color = (average_color[0] + color[0], average_color[1] + color[1], average_color[2] + color[2])
+        compteur += 1
+  if compteur == 0:
+    compteur = 1
+  return (round(average_color[0]/compteur), round(average_color[1]/compteur), round(average_color[2]/compteur))
+
+#identification  de la correspondance de couleur des feuilles
+def color_identification(average_color):
+  #couleur de référence
+  good_health_color = (151, 196, 53)
+  bad_health_color = (86, 59, 40)
+  #si rouge plus grand que vert, la plante est malade
+  if average_color[0]>average_color[1]:
+    return False
+  else:
+    return True
