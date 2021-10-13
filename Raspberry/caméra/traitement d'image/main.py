@@ -13,9 +13,10 @@ Script de traitement d'images
 
 import PIL.Image
 import matplotlib.pyplot as plt
+from function import *
 
-scale = 6
-path = "image/aaaa.jpg"
+scale = 2
+path = "image/platane_sain.jpg"
 errodation = 2
 dilatation = 2
 #pas besoin pour le romarain
@@ -71,7 +72,7 @@ if __name__ == '__main__':
       print("Average color: ", average_color, " Good health color: ", good_health_color, " Bad health color: ", bad_health_color)
       good_health = color_identification(average_color)
 
-      fig2 =plt.figure()
+      fig2 = plt.figure()
       fig2.add_subplot(1, 3, 1)
       average_color_img = PIL.Image.new('RGB', (100,100), average_color)
       plt.title("Average color")
@@ -84,7 +85,8 @@ if __name__ == '__main__':
       bad_color_img = PIL.Image.new('RGB', (100,100), bad_health_color)
       plt.title("Bad health color")
       plt.imshow(bad_color_img)
-
+      plt.show()
+      
       if good_health == True:
         print("Votre plante est en bonne santé :)")
         stop += 10

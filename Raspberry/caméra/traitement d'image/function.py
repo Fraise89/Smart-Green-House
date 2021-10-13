@@ -305,13 +305,13 @@ def isolate_object(image,color):
     return new_image
 # retourne la couleur principal d'une image sur un masque
 def identify_color(image_colored, mask):
-  definition = image.size
+  definition = image_colored.size
   average_color = (0,0,0)
   compteur = 0
   for y in range(definition[1]):
     for x in range(definition[0]):
       if mask[y][x] == 1:
-        color = image.getpixel((x,y))
+        color = image_colored.getpixel((x,y))
         average_color = (average_color[0] + color[0], average_color[1] + color[1], average_color[2] + color[2])
         compteur += 1
   if compteur == 0:
