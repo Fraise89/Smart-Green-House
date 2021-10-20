@@ -15,8 +15,8 @@ import PIL.Image
 import matplotlib.pyplot as plt
 from function import *
 
-scale = 2
-path = "image/platane_sain.jpg"
+scale = 8
+path = "/home/pi/Documents/image/plante_picture.jpg"
 errodation = 2
 dilatation = 2
 #pas besoin pour le romarain
@@ -26,8 +26,10 @@ bad_health_color = (86, 59, 40)
 
 if __name__ == '__main__':
 
-#   acquisition de l'image
+#   prise de la photo
+    take_picture(1, path)
 
+#   acquisition de l'image  
     stop = 0
     while stop <= 1:
       image = PIL.Image.open(path)

@@ -1,8 +1,13 @@
 """
-Fonction lié au traitement d'image
+Fonctions lié au traitement d'image
 """
+#librairie pour le traitement d'image
 import numpy as np
 import math
+
+#librairie pour la prise de photo
+from picamera import PiCamera
+from time import sleep
 
 #obtention d'un pixel en son équivalent gris
 def get_gray_pix(image, pixel):
@@ -328,3 +333,13 @@ def color_identification(average_color):
     return False
   else:
     return True
+
+"""
+Fonction pour la prise de photo
+"""
+def take_picture(delay, path):
+    camera = PiCamera()
+    camera.start_preview(alpha = 192)
+    sleep(delay)
+    camera.capture(path)
+    camera.stop_preview()
