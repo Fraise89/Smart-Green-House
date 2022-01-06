@@ -1,13 +1,8 @@
 """
-Fonctions lié au traitement d'image
+Fonction lié au traitement d'image
 """
-#librairie pour le traitement d'image
 import numpy as np
 import math
-
-#librairie pour la prise de photo
-from picamera import PiCamera
-from time import sleep
 
 #obtention d'un pixel en son équivalent gris
 def get_gray_pix(image, pixel):
@@ -310,13 +305,13 @@ def isolate_object(image,color):
     return new_image
 # retourne la couleur principal d'une image sur un masque
 def identify_color(image_colored, mask):
-  definition = image_colored.size
+  definition = image.size
   average_color = (0,0,0)
   compteur = 0
   for y in range(definition[1]):
     for x in range(definition[0]):
       if mask[y][x] == 1:
-        color = image_colored.getpixel((x,y))
+        color = image.getpixel((x,y))
         average_color = (average_color[0] + color[0], average_color[1] + color[1], average_color[2] + color[2])
         compteur += 1
   if compteur == 0:
@@ -325,21 +320,9 @@ def identify_color(image_colored, mask):
 
 #identification  de la correspondance de couleur des feuilles
 def color_identification(average_color):
-  #couleur de référence
-  good_health_color = (151, 196, 53)
-  bad_health_color = (86, 59, 40)
+  print(average_color)
   #si rouge plus grand que vert, la plante est malade
-  if average_color[0]>average_color[1]:
+  if (average_color[0] > (average_color[1] + 30)) or (average_color[2] > average_color[1] + 30):
     return False
   else:
     return True
-
-"""
-Fonction pour la prise de photo
-"""
-def take_picture(delay, path):
-    camera = PiCamera()
-    camera.start_preview(alpha = 192)
-    sleep(delay)
-    camera.capture(path)
-    camera.stop_preview()
