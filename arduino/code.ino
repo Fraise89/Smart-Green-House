@@ -14,6 +14,9 @@ int VentiloSpeed;
 int temp;
 int humid ;
 int percentValue = 0;
+char toDatabase[30];
+int compteurEnvoi;
+
 void setup() 
    {
   Serial.begin(9600) ;
@@ -25,6 +28,10 @@ void setup()
   pinMode(LED_Matrix, OUTPUT);
   pinMode(LDR_pin, INPUT);
   digitalWrite(pompe, LOW) ; // pompe off
+  compteurEnvoi = 0;
+    toDatabase[compteurEnvoi++] = 'B';
+    toDatabase[compteurEnvoi++] = 'D';
+    toDatabase[compteurEnvoi++] = ';';
     }
 
 void loop()
@@ -32,10 +39,12 @@ void loop()
       temperature();
       humidity_soil();
       eclairage();
-   
+      Serial.print(toDatabase);
+      compteurEnvoi = 3;
   }
 void temperature() //PARTIE CONTROLE PAR VENTILO ET SERVO
   { 
+    char buff[10];
    Serial.println(F("**Test temperature... "));
   float h = dht.readHumidity();
   // Read temperature as Celsius (the default)
@@ -44,8 +53,33 @@ void temperature() //PARTIE CONTROLE PAR VENTILO ET SERVO
   // Check if any reads failed and exit early (to try again).
   if (isnan(h) || isnan(t) ) {
     Serial.println(F("Failed to read from DHT sensor!"));
+
+    //Valeurs non valides pour la base de donnée
+    toDatabase[compteurEnvoi++] = '-';
+    toDatabase[compteurEnvoi++] = ';';
+    toDatabase[compteurEnvoi++] = '-';
+    toDatabase[compteurEnvoi++] = ';';
+    
     return;
   }
+  // pour la base de donnée
+  dtostrf(h, 4, 2, buff); // valeur valide
+  toDatabase[compteurEnvoi++] = buff[0];
+  toDatabase[compteurEnvoi++] = buff[1];
+  toDatabase[compteurEnvoi++] = buff[2];
+  toDatabase[compteurEnvoi++] = buff[3];
+  toDatabase[compteurEnvoi++] = buff[4];
+  toDatabase[compteurEnvoi++] = ';';
+
+  dtostrf(t, 4, 2, buff); 
+  toDatabase[compteurEnvoi++] = buff[0]; 
+  toDatabase[compteurEnvoi++] = buff[1];
+  toDatabase[compteurEnvoi++] = buff[2];
+  toDatabase[compteurEnvoi++] = buff[3];
+  toDatabase[compteurEnvoi++] = buff[4];
+  toDatabase[compteurEnvoi++] = ';';
+
+  
   Serial.print(F("Humidity: "));
   Serial.print(h);
   Serial.print(F("%  Temperature: "));
@@ -57,26 +91,45 @@ void temperature() //PARTIE CONTROLE PAR VENTILO ET SERVO
       VentiloSpeed = 0; // Ventilo is not spinning 
       digitalWrite(Ventilo, LOW);    
       Serial.print("Ventilo OFF ->"); 
+      
+        toDatabase[compteurEnvoi++] = '0';
+        toDatabase[compteurEnvoi++] = ';';
         } 
       else
         {  
        VentiloSpeed = 1; // Ventilo is spinning 
        digitalWrite(Ventilo, HIGH); 
        Serial.print(" Ventilo ON ->");
+       
+        toDatabase[compteurEnvoi++] = '1';
+        toDatabase[compteurEnvoi++] = ';';
          } }
 
   void humidity_soil()  // PARTIE CONTROLE HUMIDIT2 DU SOL
   {
+  char buff[5];
   
   Serial.println(" **Test humidité du Sol...");
   humid= analogRead(Humidite_sol) ; // lecture capteur humidité
   Serial.print("Analog Value humidity: ");
   Serial.println(humid) ; //affichage humidité
-  percentValue = map(humid, 0,1023,100,0);
+  percentValue = map(humid, 0,1023,100,0);  
   Serial.print("Percent Value humidity: ");
   Serial.print(percentValue);
   Serial.println("%");
- 
+
+if (percentValue != 100){
+ sprintf(buff, "%d", percentValue); // valeur valide
+  toDatabase[compteurEnvoi++] = buff[0];
+  toDatabase[compteurEnvoi++] = buff[1];
+  toDatabase[compteurEnvoi++] = ';';
+}
+else{
+  toDatabase[compteurEnvoi++] = '1';
+  toDatabase[compteurEnvoi++] = '0';
+  toDatabase[compteurEnvoi++] = '0';
+  toDatabase[compteurEnvoi++] = ';';
+}
  
    if (humid>500) // si le sol est  sec (dans l’eau : 0, dans l’air 1023)
       {
@@ -102,11 +155,15 @@ void temperature() //PARTIE CONTROLE PAR VENTILO ET SERVO
         {
         digitalWrite(LED_Matrix, HIGH);
         Serial.println("LDR is DARK, LED is ON");
+        toDatabase[compteurEnvoi++] = '1';
+        toDatabase[compteurEnvoi++] = ';';
         delay(2000);
          }
     else {
          digitalWrite(LED_Matrix, LOW);  
          Serial.println("LDR is BRIGHT, LED is OFF");
+         toDatabase[compteurEnvoi++] = '0';
+         toDatabase[compteurEnvoi++] = ';';
          delay(1000);
          }
   Serial.println("------------------------------------") ;
