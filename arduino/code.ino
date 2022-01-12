@@ -1,4 +1,5 @@
 #include <DHT.h>
+#include <ArduinoLowPower.h>
 #define DHTPIN A1              // A1 ->  DHT
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
@@ -39,8 +40,11 @@ void loop()
       temperature();
       humidity_soil();
       eclairage();
+   
       Serial.print(toDatabase);
       compteurEnvoi = 3;
+   
+      LowPower.deepSleep(60000); // put the arduino in sleep mode for 1 min
   }
 void temperature() //PARTIE CONTROLE PAR VENTILO ET SERVO
   { 
