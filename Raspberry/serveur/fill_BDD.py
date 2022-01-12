@@ -8,7 +8,6 @@ try:
         response = s.readline()
         if response.startswith("BD"):
             if response.count(';') == 5:
-                print("test");
                 fichier = open("database.csv","a");
                 toWrite = response[3:]
                 fichier.write(toWrite)
