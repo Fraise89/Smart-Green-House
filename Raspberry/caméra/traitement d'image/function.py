@@ -240,7 +240,7 @@ def fill_an_object(color, image, image_group):
                     if image[x+1][y+1] == 1:
                         image_group[x+1][y+1] = color
     return image_group
-#obtention d'une matrice avec tout les objets
+#obtention d'une matrice avec tous les objets
 #retourne le nombre d'objets et la matrice d'objets
 def get_form(image):
     print("Object counting processing...")
