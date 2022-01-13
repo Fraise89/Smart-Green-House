@@ -16,563 +16,543 @@ $EndDescr
 $Comp
 L power:+5V #PWR?
 U 1 1 61A8B6F5
-P 3600 700
-F 0 "#PWR?" H 3600 550 50  0001 C CNN
-F 1 "+5V" H 3615 873 50  0000 C CNN
-F 2 "" H 3600 700 50  0001 C CNN
-F 3 "" H 3600 700 50  0001 C CNN
-	1    3600 700 
+P 6350 2800
+F 0 "#PWR?" H 6350 2650 50  0001 C CNN
+F 1 "+5V" H 6365 2973 50  0000 C CNN
+F 2 "" H 6350 2800 50  0001 C CNN
+F 3 "" H 6350 2800 50  0001 C CNN
+	1    6350 2800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 850  1700
-NoConn ~ 850  1800
-NoConn ~ 850  1900
-NoConn ~ 850  2100
-NoConn ~ 850  2300
-NoConn ~ 850  2200
-NoConn ~ 850  2500
-NoConn ~ 850  2600
-NoConn ~ 850  2700
-NoConn ~ 850  2800
-NoConn ~ 850  2900
-NoConn ~ 850  3000
-NoConn ~ 2450 3100
-NoConn ~ 2450 3000
-NoConn ~ 2450 2800
-NoConn ~ 2450 2700
-NoConn ~ 2450 2600
-NoConn ~ 2450 2500
-NoConn ~ 2450 2400
-NoConn ~ 2450 2200
-NoConn ~ 2450 2100
-NoConn ~ 2450 2000
-NoConn ~ 2450 1800
-NoConn ~ 2450 1700
-NoConn ~ 2450 1500
-NoConn ~ 2450 1400
 $Comp
 L 2088RGB-5:2088RGB-5 U?
 U 1 1 61A7ACE9
-P 7100 1200
-F 0 "U?" H 7125 1265 50  0000 C CNN
-F 1 "2088RGB-5" H 7125 1174 50  0000 C CNN
-F 2 "" H 7100 1200 50  0001 C CNN
-F 3 "" H 7100 1200 50  0001 C CNN
-	1    7100 1200
+P 4550 3700
+F 0 "U?" H 4575 3765 50  0000 C CNN
+F 1 "2088RGB-5" H 4575 3674 50  0000 C CNN
+F 2 "" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 61A7FB7A
-P 8250 3350
-F 0 "R1" H 8320 3396 50  0000 L CNN
-F 1 "220" H 8320 3305 50  0000 L CNN
-F 2 "" V 8180 3350 50  0001 C CNN
-F 3 "~" H 8250 3350 50  0001 C CNN
-	1    8250 3350
+P 5700 5850
+F 0 "R1" H 5770 5896 50  0000 L CNN
+F 1 "220" H 5770 5805 50  0000 L CNN
+F 2 "" V 5630 5850 50  0001 C CNN
+F 3 "~" H 5700 5850 50  0001 C CNN
+	1    5700 5850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7950 1850 7950 1950
-Connection ~ 7950 1950
+	5400 4350 5400 4450
+Connection ~ 5400 4450
 Wire Wire Line
-	7950 1950 7950 2050
-Connection ~ 7950 2050
+	5400 4450 5400 4550
+Connection ~ 5400 4550
 Wire Wire Line
-	7950 2050 7950 2150
-Connection ~ 7950 2150
+	5400 4550 5400 4650
+Connection ~ 5400 4650
 Wire Wire Line
-	7950 2150 7950 2250
-Connection ~ 7950 2250
+	5400 4650 5400 4750
+Connection ~ 5400 4750
 Wire Wire Line
-	7950 2250 7950 2350
-Connection ~ 7950 2350
+	5400 4750 5400 4850
+Connection ~ 5400 4850
 Wire Wire Line
-	7950 2350 7950 2450
-Connection ~ 7950 2450
+	5400 4850 5400 4950
+Connection ~ 5400 4950
 Wire Wire Line
-	7950 2450 7950 2550
+	5400 4950 5400 5050
 Wire Wire Line
-	6300 1450 6300 1550
-Connection ~ 6300 1550
+	3750 3950 3750 4050
+Connection ~ 3750 4050
 Wire Wire Line
-	6300 1550 6300 1650
-Connection ~ 6300 1650
+	3750 4050 3750 4150
+Connection ~ 3750 4150
 Wire Wire Line
-	6300 1650 6300 1750
-Connection ~ 6300 1750
+	3750 4150 3750 4250
+Connection ~ 3750 4250
 Wire Wire Line
-	6300 1750 6300 1850
-Connection ~ 6300 1850
+	3750 4250 3750 4350
+Connection ~ 3750 4350
 Wire Wire Line
-	6300 1850 6300 1950
-Connection ~ 6300 1950
+	3750 4350 3750 4450
+Connection ~ 3750 4450
 Wire Wire Line
-	6300 1950 6300 2050
-Connection ~ 6300 2050
+	3750 4450 3750 4550
+Connection ~ 3750 4550
 Wire Wire Line
-	6300 2050 6300 2150
+	3750 4550 3750 4650
 $Comp
 L Device:R R?
 U 1 1 61A9323F
-P 6550 3700
-F 0 "R?" H 6480 3654 50  0000 R CNN
-F 1 "47" H 6480 3745 50  0000 R CNN
-F 2 "" V 6480 3700 50  0001 C CNN
-F 3 "~" H 6550 3700 50  0001 C CNN
-	1    6550 3700
+P 3100 5850
+F 0 "R?" H 3030 5804 50  0000 R CNN
+F 1 "47" H 3030 5895 50  0000 R CNN
+F 2 "" V 3030 5850 50  0001 C CNN
+F 3 "~" H 3100 5850 50  0001 C CNN
+	1    3100 5850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6300 2950 6300 2850
-Connection ~ 6300 2350
+	3750 5450 3750 5350
+Connection ~ 3750 4850
 Wire Wire Line
-	6300 2350 6300 2250
-Connection ~ 6300 2450
+	3750 4850 3750 4750
+Connection ~ 3750 4950
 Wire Wire Line
-	6300 2450 6300 2350
-Connection ~ 6300 2550
+	3750 4950 3750 4850
+Connection ~ 3750 5050
 Wire Wire Line
-	6300 2550 6300 2450
-Connection ~ 6300 2650
+	3750 5050 3750 4950
+Connection ~ 3750 5150
 Wire Wire Line
-	6300 2650 6300 2550
-Connection ~ 6300 2750
+	3750 5150 3750 5050
+Connection ~ 3750 5250
 Wire Wire Line
-	6300 2750 6300 2650
-Connection ~ 6300 2850
+	3750 5250 3750 5150
+Connection ~ 3750 5350
 Wire Wire Line
-	6300 2850 6300 2750
+	3750 5350 3750 5250
 Wire Wire Line
-	6300 2950 6150 2950
-Connection ~ 6300 2950
+	3750 5450 3600 5450
+Connection ~ 3750 5450
 Wire Wire Line
-	7950 2950 7950 2850
-Connection ~ 7950 2750
+	5400 5450 5400 5350
+Connection ~ 5400 5250
 Wire Wire Line
-	7950 2750 7950 2650
-Connection ~ 7950 2850
+	5400 5250 5400 5150
+Connection ~ 5400 5350
 Wire Wire Line
-	7950 2850 7950 2750
+	5400 5350 5400 5250
 Wire Wire Line
-	7950 1450 7950 1550
-Connection ~ 7950 1550
+	5400 3950 5400 4050
+Connection ~ 5400 4050
 Wire Wire Line
-	7950 1550 7950 1650
-Connection ~ 7950 1650
+	5400 4050 5400 4150
+Connection ~ 5400 4150
 Wire Wire Line
-	7950 1650 7950 1750
+	5400 4150 5400 4250
 Wire Wire Line
-	7950 2650 8050 2650
+	5400 5150 5500 5150
 Wire Wire Line
-	8050 2650 8050 1750
+	5500 5150 5500 4250
 Wire Wire Line
-	8050 1750 7950 1750
-Connection ~ 7950 2650
-Connection ~ 7950 1750
+	5500 4250 5400 4250
+Connection ~ 5400 5150
+Connection ~ 5400 4250
 Wire Wire Line
-	8200 2900 8200 3150
+	5650 5400 5650 5650
 Wire Wire Line
-	8200 3150 6550 3150
+	5650 5650 4000 5650
 Wire Wire Line
-	6150 3150 6150 2950
+	3600 5650 3600 5600
 Wire Wire Line
-	8200 2150 8200 1200
+	5650 4650 5650 3700
 Wire Wire Line
-	8200 1200 6300 1200
+	5650 3700 3750 3700
 Wire Wire Line
-	6300 1200 6300 1450
-Connection ~ 6300 1450
+	3750 3700 3750 3950
+Connection ~ 3750 3950
 $Comp
 L 2088RGB-5:PiFace_Relay_Extra U?
 U 1 1 61B72DC7
-P 3700 4150
-F 0 "U?" H 3725 4175 50  0000 C CNN
-F 1 "PiFace_Relay_Extra" H 3725 4084 50  0000 C CNN
-F 2 "" H 3700 4150 50  0001 C CNN
-F 3 "" H 3700 4150 50  0001 C CNN
-	1    3700 4150
+P 1650 4400
+F 0 "U?" H 1675 4425 50  0000 C CNN
+F 1 "PiFace_Relay_Extra" H 1675 4334 50  0000 C CNN
+F 2 "" H 1650 4400 50  0001 C CNN
+F 3 "" H 1650 4400 50  0001 C CNN
+	1    1650 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L 2088RGB-5:2088RGB-5 U?
 U 1 1 61AA424E
-P 9300 1200
-F 0 "U?" H 9325 1265 50  0000 C CNN
-F 1 "2088RGB-5" H 9325 1174 50  0000 C CNN
-F 2 "" H 9300 1200 50  0001 C CNN
-F 3 "" H 9300 1200 50  0001 C CNN
-	1    9300 1200
+P 6750 3700
+F 0 "U?" H 6775 3765 50  0000 C CNN
+F 1 "2088RGB-5" H 6775 3674 50  0000 C CNN
+F 2 "" H 6750 3700 50  0001 C CNN
+F 3 "" H 6750 3700 50  0001 C CNN
+	1    6750 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 1750 10150 1650
+	7600 4250 7600 4150
 Wire Wire Line
-	10150 1650 10150 1550
-Connection ~ 10150 1550
+	7600 4150 7600 4050
+Connection ~ 7600 4050
 Wire Wire Line
-	10150 1550 10150 1450
+	7600 4050 7600 3950
 Wire Wire Line
-	10150 1250 10150 1450
-Connection ~ 10150 1650
+	7600 3750 7600 3950
+Connection ~ 7600 4150
 Wire Wire Line
-	10150 2950 10150 2850
+	7600 5450 7600 5350
 Wire Wire Line
-	10150 2850 10150 2750
-Connection ~ 10150 2750
+	7600 5350 7600 5250
+Connection ~ 7600 5250
 Wire Wire Line
-	10150 2750 10150 2700
-Connection ~ 10150 2850
-Connection ~ 10150 1750
-Connection ~ 10150 1450
+	7600 5250 7600 5200
+Connection ~ 7600 5350
+Connection ~ 7600 4250
+Connection ~ 7600 3950
 Wire Wire Line
-	10150 2550 10150 2450
+	7600 5050 7600 4950
 Wire Wire Line
-	10150 2450 10150 2400
-Connection ~ 10150 1950
+	7600 4950 7600 4900
+Connection ~ 7600 4450
 Wire Wire Line
-	10150 1950 10150 1850
+	7600 4450 7600 4350
 Wire Wire Line
-	10150 2050 10150 1950
-Connection ~ 10150 2050
-Connection ~ 10150 2150
+	7600 4550 7600 4450
+Connection ~ 7600 4550
+Connection ~ 7600 4650
 Wire Wire Line
-	10150 2150 10150 2050
+	7600 4650 7600 4550
 Wire Wire Line
-	10150 2250 10150 2150
-Connection ~ 10150 2250
-Connection ~ 10150 2350
+	7600 4750 7600 4650
+Connection ~ 7600 4750
+Connection ~ 7600 4850
 Wire Wire Line
-	10150 2350 10150 2250
+	7600 4850 7600 4750
 Wire Wire Line
-	10150 2400 10150 2350
-Connection ~ 10150 2450
+	7600 4900 7600 4850
+Connection ~ 7600 4950
 Wire Wire Line
-	8500 1450 8500 1550
+	5950 3950 5950 4050
 Wire Wire Line
-	8500 1550 8500 1650
-Connection ~ 8500 1550
-Connection ~ 8500 1650
+	5950 4050 5950 4150
+Connection ~ 5950 4050
+Connection ~ 5950 4150
 Wire Wire Line
-	8500 1650 8500 1750
+	5950 4150 5950 4250
 Wire Wire Line
-	8500 1750 8500 1850
-Connection ~ 8500 1750
-Connection ~ 8500 1850
+	5950 4250 5950 4350
+Connection ~ 5950 4250
+Connection ~ 5950 4350
 Wire Wire Line
-	8500 1850 8500 1950
+	5950 4350 5950 4450
 Wire Wire Line
-	8500 1950 8500 2050
-Connection ~ 8500 1950
-Connection ~ 8500 2050
+	5950 4450 5950 4550
+Connection ~ 5950 4450
+Connection ~ 5950 4550
 Wire Wire Line
-	8500 2050 8500 2150
+	5950 4550 5950 4650
 Wire Wire Line
-	8500 2250 8500 2350
+	5950 4750 5950 4850
 Wire Wire Line
-	8500 2350 8500 2450
-Connection ~ 8500 2350
-Connection ~ 8500 2450
+	5950 4850 5950 4950
+Connection ~ 5950 4850
+Connection ~ 5950 4950
 Wire Wire Line
-	8500 2450 8500 2550
+	5950 4950 5950 5050
 Wire Wire Line
-	8500 2550 8500 2650
-Connection ~ 8500 2550
-Connection ~ 8500 2650
+	5950 5050 5950 5150
+Connection ~ 5950 5050
+Connection ~ 5950 5150
 Wire Wire Line
-	8500 2650 8500 2750
+	5950 5150 5950 5250
 Wire Wire Line
-	8500 2750 8500 2850
-Connection ~ 8500 2750
-Connection ~ 8500 2850
+	5950 5250 5950 5350
+Connection ~ 5950 5250
+Connection ~ 5950 5350
 Wire Wire Line
-	8500 2850 8500 2900
-Connection ~ 8500 2150
+	5950 5350 5950 5400
+Connection ~ 5950 4650
 Wire Wire Line
-	10300 3200 8250 3200
+	7750 5700 5700 5700
 Wire Wire Line
-	10300 2400 10300 3200
+	7750 4900 7750 5700
 Wire Wire Line
-	8500 2150 8200 2150
-Connection ~ 10150 2400
+	5950 4650 5650 4650
+Connection ~ 7600 4900
 Wire Wire Line
-	10150 2400 10300 2400
+	7600 4900 7750 4900
 Wire Wire Line
-	8500 2900 8500 2950
-Connection ~ 8500 2900
+	5950 5400 5950 5450
+Connection ~ 5950 5400
 Wire Wire Line
-	8500 2900 8200 2900
+	5950 5400 5650 5400
 Wire Wire Line
-	10150 2700 10150 2650
-Connection ~ 10150 2700
+	7600 5200 7600 5150
+Connection ~ 7600 5200
 Wire Wire Line
-	10250 1750 10150 1750
+	7700 4250 7600 4250
 Wire Wire Line
-	10250 2700 10250 1750
+	7700 5200 7700 4250
 Wire Wire Line
-	10150 2700 10250 2700
-Text GLabel 850  1400 0    50   Input ~ 0
+	7600 5200 7700 5200
+Text GLabel 3450 1300 0    50   Input ~ 0
 Rx-Tx
-Text GLabel 3200 1900 0    50   Input ~ 0
-Rx-Tx
-Text GLabel 850  1500 0    50   Input ~ 0
+Text GLabel 3450 1200 0    50   Input ~ 0
 Tx-Rx
-Text GLabel 3200 1800 0    50   Input ~ 0
-Tx-Rx
-Text GLabel 3200 2900 0    50   Input ~ 0
+Text GLabel 3450 2300 0    50   Input ~ 0
 Color
 Wire Wire Line
-	6550 3150 6550 3250
+	4000 5650 4000 5750
 $Comp
 L Device:R R?
 U 1 1 61A921B2
-P 6550 3400
-F 0 "R?" H 6620 3446 50  0000 L CNN
-F 1 "47" H 6620 3355 50  0000 L CNN
-F 2 "" V 6480 3400 50  0001 C CNN
-F 3 "~" H 6550 3400 50  0001 C CNN
-	1    6550 3400
-	1    0    0    -1  
+P 3450 5600
+F 0 "R?" H 3520 5646 50  0000 L CNN
+F 1 "47" H 3520 5555 50  0000 L CNN
+F 2 "" V 3380 5600 50  0001 C CNN
+F 3 "~" H 3450 5600 50  0001 C CNN
+	1    3450 5600
+	0    -1   -1   0   
 $EndComp
-Connection ~ 6550 3150
+Connection ~ 4000 5650
 Wire Wire Line
-	6550 3150 6150 3150
-Text GLabel 6550 3850 3    50   Input ~ 0
+	4000 5650 3600 5650
+Text GLabel 3100 6100 3    50   Input ~ 0
 Color
-Connection ~ 6300 2150
-Text GLabel 5650 2150 0    50   Input ~ 0
+Connection ~ 3750 4650
+Text GLabel 3100 4650 0    50   Input ~ 0
 Color
 Wire Wire Line
-	6250 2150 6300 2150
+	3700 4650 3750 4650
 $Comp
 L Device:R R?
 U 1 1 61A8BDF9
-P 6100 2150
-F 0 "R?" V 6307 2150 50  0000 C CNN
-F 1 "47" V 6216 2150 50  0000 C CNN
-F 2 "" V 6030 2150 50  0001 C CNN
-F 3 "~" H 6100 2150 50  0001 C CNN
-	1    6100 2150
+P 3550 4650
+F 0 "R?" V 3757 4650 50  0000 C CNN
+F 1 "47" V 3666 4650 50  0000 C CNN
+F 2 "" V 3480 4650 50  0001 C CNN
+F 3 "~" H 3550 4650 50  0001 C CNN
+	1    3550 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 61A88411
-P 5800 2150
-F 0 "R2" V 6007 2150 50  0000 C CNN
-F 1 "100" V 5916 2150 50  0000 C CNN
-F 2 "" V 5730 2150 50  0001 C CNN
-F 3 "~" H 5800 2150 50  0001 C CNN
-	1    5800 2150
+P 3250 4650
+F 0 "R2" V 3457 4650 50  0000 C CNN
+F 1 "100" V 3366 4650 50  0000 C CNN
+F 2 "" V 3180 4650 50  0001 C CNN
+F 3 "~" H 3250 4650 50  0001 C CNN
+	1    3250 4650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8250 3500 3    50   Input ~ 0
+Text GLabel 5700 6100 3    50   Input ~ 0
 Color
 Wire Wire Line
-	8250 3200 8250 2350
+	5700 5700 5700 4850
 Wire Wire Line
-	8250 2350 7950 2350
-Connection ~ 8250 3200
+	5700 4850 5400 4850
+Connection ~ 5700 5700
 $Comp
 L 2088RGB-5:VMA311 U?
 U 1 1 61AEFC0C
-P 1750 4350
-F 0 "U?" H 1878 4151 50  0000 L CNN
-F 1 "VMA311" H 1878 4060 50  0000 L CNN
-F 2 "" H 1750 4350 50  0001 C CNN
-F 3 "" H 1750 4350 50  0001 C CNN
-	1    1750 4350
+P 1550 1500
+F 0 "U?" H 1678 1301 50  0000 L CNN
+F 1 "VMA311" H 1678 1210 50  0000 L CNN
+F 2 "" H 1550 1500 50  0001 C CNN
+F 3 "" H 1550 1500 50  0001 C CNN
+	1    1550 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L 2088RGB-5:SSHU001 U?
 U 1 1 61B0DF58
-P 1750 4050
-F 0 "U?" H 1928 3901 50  0000 L CNN
-F 1 "SSHU001" H 1928 3810 50  0000 L CNN
-F 2 "" H 1750 4050 50  0001 C CNN
-F 3 "" H 1750 4050 50  0001 C CNN
-	1    1750 4050
+P 1600 700
+F 0 "U?" H 1778 551 50  0000 L CNN
+F 1 "SSHU001" H 1778 460 50  0000 L CNN
+F 2 "" H 1600 700 50  0001 C CNN
+F 3 "" H 1600 700 50  0001 C CNN
+	1    1600 700 
 	1    0    0    -1  
 $EndComp
-Text GLabel 3300 1400 0    50   Input ~ 0
+Text GLabel 3550 800  0    50   Input ~ 0
 Vcc
 Wire Wire Line
-	3600 1400 3300 1400
-Text GLabel 1450 750  1    50   Input ~ 0
-Vcc
-Wire Wire Line
-	1450 750  1450 1000
-NoConn ~ 1550 1000
-NoConn ~ 1750 1000
-NoConn ~ 1850 1000
-Text GLabel 3600 700  3    50   Input ~ 0
+	3850 800  3550 800 
+Text GLabel 6350 2800 3    50   Input ~ 0
 Vcc
 $Comp
 L power:GND #PWR?
 U 1 1 61A8A9F2
-P 3400 750
-F 0 "#PWR?" H 3400 500 50  0001 C CNN
-F 1 "GND" H 3405 577 50  0000 C CNN
-F 2 "" H 3400 750 50  0001 C CNN
-F 3 "" H 3400 750 50  0001 C CNN
-	1    3400 750 
+P 6150 2850
+F 0 "#PWR?" H 6150 2600 50  0001 C CNN
+F 1 "GND" H 6155 2677 50  0000 C CNN
+F 2 "" H 6150 2850 50  0001 C CNN
+F 3 "" H 6150 2850 50  0001 C CNN
+	1    6150 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 4700 0    50   Input ~ 0
+Text GLabel 1350 1850 0    50   Input ~ 0
 Gnd
-Text GLabel 1550 4350 0    50   Input ~ 0
+Text GLabel 1400 1000 0    50   Input ~ 0
 Gnd
-Text GLabel 1250 3600 3    50   Input ~ 0
-Gnd
-NoConn ~ 4200 1800
-NoConn ~ 4200 3100
-NoConn ~ 4200 3200
-NoConn ~ 4200 2900
-NoConn ~ 4200 2800
-NoConn ~ 4200 2700
-NoConn ~ 4200 2600
-Text GLabel 1550 4250 0    50   Input ~ 0
+NoConn ~ 4450 1200
+NoConn ~ 4450 2500
+NoConn ~ 4450 2600
+NoConn ~ 4450 2300
+NoConn ~ 4450 2200
+NoConn ~ 4450 2100
+NoConn ~ 4450 2000
+Text GLabel 1400 900  0    50   Input ~ 0
 Vcc
-Text GLabel 1550 4600 0    50   Input ~ 0
+Text GLabel 1350 1750 0    50   Input ~ 0
 Vcc
-Text GLabel 8050 2250 2    50   Input ~ 0
+Text GLabel 5500 4750 2    50   Input ~ 0
 Vcc
-Text GLabel 3350 4650 0    50   Input ~ 0
+Text GLabel 1300 4900 0    50   Input ~ 0
 PumpOn
-Text GLabel 1750 6050 3    50   Input ~ 0
+Text GLabel 1650 3600 3    50   Input ~ 0
 Gnd
-Text GLabel 1750 5150 1    50   Input ~ 0
+Text GLabel 1650 2700 1    50   Input ~ 0
 Vcc
 $Comp
 L Transistor_FET:IRF540N Q?
 U 1 1 61B57A13
-P 1650 5350
-F 0 "Q?" H 1854 5396 50  0000 L CNN
-F 1 "IRF540N" H 1854 5305 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1900 5275 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 1650 5350 50  0001 L CNN
-	1    1650 5350
+P 1550 2900
+F 0 "Q?" H 1754 2946 50  0000 L CNN
+F 1 "IRF540N" H 1754 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1800 2825 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 1550 2900 50  0001 L CNN
+	1    1550 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motor:Motor_DC M?
 U 1 1 61B2EEC7
-P 1750 5750
-F 0 "M?" H 1908 5746 50  0000 L CNN
-F 1 "Motor_DC" H 1908 5655 50  0000 L CNN
-F 2 "" H 1750 5660 50  0001 C CNN
-F 3 "~" H 1750 5660 50  0001 C CNN
-	1    1750 5750
+P 1650 3300
+F 0 "M?" H 1808 3296 50  0000 L CNN
+F 1 "Motor_DC" H 1808 3205 50  0000 L CNN
+F 2 "" H 1650 3210 50  0001 C CNN
+F 3 "~" H 1650 3210 50  0001 C CNN
+	1    1650 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 2800 0    50   Input ~ 0
+Text GLabel 3450 2200 0    50   Input ~ 0
 VentilatorOn
-Text GLabel 1450 5350 0    50   Input ~ 0
+Text GLabel 1350 2900 0    50   Input ~ 0
 VentilatorOn
-Text GLabel 3200 2600 0    50   Input ~ 0
+Text GLabel 3450 2000 0    50   Input ~ 0
 PumpOn
-Text GLabel 1550 4150 0    50   Input ~ 0
+Text GLabel 1400 800  0    50   Input ~ 0
 GroundHumidityOn
-Text GLabel 4200 2400 2    50   Input ~ 0
+Text GLabel 4450 1800 2    50   Input ~ 0
 GroundHumidityOn
-Text GLabel 4200 2500 2    50   Input ~ 0
-HumidityOn
-Text GLabel 1550 4500 0    50   Input ~ 0
-HumidityOn
-Text GLabel 3350 4850 0    50   Input ~ 0
+Text GLabel 4450 1900 2    50   Input ~ 0
+vmaData
+Text GLabel 1350 1650 0    50   Input ~ 0
+vmaData
+Text GLabel 1300 5100 0    50   Input ~ 0
 Vcc
-Text GLabel 3350 4750 0    50   Input ~ 0
+Text GLabel 1300 5000 0    50   Input ~ 0
 Gnd
-Text GLabel 4100 5350 2    50   Input ~ 0
+Text GLabel 2050 5600 2    50   Input ~ 0
 Vcc
 Text Notes 8550 7500 2    50   ~ 0
 Smart green house schematic\n
 Text Notes 8800 6700 2    50   ~ 0
 Schematic for the smart green house project
-Text GLabel 4100 5450 2    50   Input ~ 0
+Text GLabel 2050 5700 2    50   Input ~ 0
 PumpOut
-NoConn ~ 4100 4350
-NoConn ~ 4100 4450
-NoConn ~ 4100 4550
-NoConn ~ 4100 4650
-NoConn ~ 4100 4750
-NoConn ~ 4100 4850
-NoConn ~ 4100 4950
-NoConn ~ 4100 5050
-NoConn ~ 4100 5150
-NoConn ~ 4100 5250
-NoConn ~ 3350 4350
-NoConn ~ 3350 4450
-NoConn ~ 3350 4550
-NoConn ~ 3350 4950
-NoConn ~ 3350 5050
-NoConn ~ 3350 5150
-NoConn ~ 3350 5250
-NoConn ~ 3350 5350
-NoConn ~ 3350 5450
-NoConn ~ 3350 5550
-NoConn ~ 3350 5650
-NoConn ~ 3350 5750
-NoConn ~ 3350 5850
-NoConn ~ 3200 3100
-NoConn ~ 3200 3000
-NoConn ~ 3200 2700
-NoConn ~ 3200 2500
-NoConn ~ 3200 2400
-NoConn ~ 3200 2300
-NoConn ~ 3200 2200
-NoConn ~ 3200 2100
-NoConn ~ 3200 2000
-NoConn ~ 3800 1400
-NoConn ~ 3900 1400
-$Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 61A783AB
-P 1650 2300
-F 0 "J1" H 1650 3781 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 1650 3690 50  0000 C CNN
-F 2 "" H 1650 2300 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 1650 2300 50  0001 C CNN
-	1    1650 2300
-	1    0    0    -1  
-$EndComp
+NoConn ~ 2050 4600
+NoConn ~ 2050 4700
+NoConn ~ 2050 4800
+NoConn ~ 2050 4900
+NoConn ~ 2050 5000
+NoConn ~ 2050 5100
+NoConn ~ 2050 5200
+NoConn ~ 2050 5300
+NoConn ~ 2050 5400
+NoConn ~ 2050 5500
+NoConn ~ 1300 4600
+NoConn ~ 1300 4700
+NoConn ~ 1300 4800
+NoConn ~ 1300 5200
+NoConn ~ 1300 5300
+NoConn ~ 1300 5400
+NoConn ~ 1300 5500
+NoConn ~ 1300 5600
+NoConn ~ 1300 5700
+NoConn ~ 1300 5800
+NoConn ~ 1300 5900
+NoConn ~ 1300 6000
+NoConn ~ 1300 6100
+NoConn ~ 3450 2500
+NoConn ~ 3450 2400
+NoConn ~ 3450 2100
+NoConn ~ 3450 1900
+NoConn ~ 3450 1800
+NoConn ~ 3450 1700
+NoConn ~ 3450 1600
+NoConn ~ 3450 1500
+NoConn ~ 3450 1400
+NoConn ~ 4050 800 
+NoConn ~ 4150 800 
 $Comp
 L MCU_Module:Arduino_UNO_R3 A1
 U 1 1 61A7ABFD
-P 3700 2400
-F 0 "A1" H 3700 3581 50  0000 C CNN
-F 1 "Arduino_UNO_R3" H 3700 3490 50  0000 C CNN
-F 2 "Module:Arduino_UNO_R3" H 3700 2400 50  0001 C CIN
-F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3700 2400 50  0001 C CNN
-	1    3700 2400
+P 3950 1800
+F 0 "A1" H 3950 2981 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 3950 2890 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 3950 1800 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3950 1800 50  0001 C CNN
+	1    3950 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3600 3500 3    50   Input ~ 0
+Text GLabel 3850 2900 3    50   Input ~ 0
 Gnd
-NoConn ~ 3800 3500
-NoConn ~ 3700 3500
-NoConn ~ 1950 3600
-NoConn ~ 1850 3600
-NoConn ~ 1750 3600
-NoConn ~ 1650 3600
-NoConn ~ 1550 3600
-NoConn ~ 1450 3600
-NoConn ~ 1350 3600
-Text GLabel 3400 750  1    50   Input ~ 0
+NoConn ~ 4050 2900
+NoConn ~ 3950 2900
+Text GLabel 6150 2850 1    50   Input ~ 0
 Gnd
-NoConn ~ 4200 2200
-NoConn ~ 4200 2000
-Text Notes 7750 900  0    157  ~ 0
+NoConn ~ 4450 1600
+NoConn ~ 4450 1400
+Text Notes 4150 6250 0    157  ~ 0
 RGB Matrix
-Text Notes 3400 6400 0    157  ~ 0
+Text Notes 1350 6650 0    157  ~ 0
 RELAY\n
-Text Notes 1250 6550 0    157  ~ 0
+Text Notes 1150 4100 0    157  ~ 0
 Ventilator\n
-Text GLabel 10150 1250 1    50   Input ~ 0
+Text GLabel 7600 3750 1    50   Input ~ 0
 Vcc
-Text Notes 1300 3950 0    79   ~ 0
+Text Notes 1050 1300 0    79   ~ 0
 Ground Humidity
-Text Notes 1050 4900 0    79   ~ 0
+Text Notes 850  2050 0    79   ~ 0
 Humidity & temperature
+Wire Notes Line
+	500  6800 2750 6800
+Wire Notes Line
+	2750 4300 500  4300
+Wire Notes Line
+	500  2350 2750 2350
+Wire Notes Line
+	2750 1450 500  1450
+Wire Notes Line
+	2750 500  2750 6800
+Wire Notes Line
+	500  500  500  6800
+Text Notes 3650 3350 0    126  ~ 0
+Arduino
+Wire Notes Line
+	5300 500  5300 3500
+Wire Notes Line
+	500  500  5300 500 
+Connection ~ 3600 5600
+Wire Wire Line
+	3600 5600 3600 5450
+Wire Wire Line
+	3300 5600 3100 5600
+Wire Wire Line
+	3100 5600 3100 5700
+Wire Wire Line
+	5700 6100 5700 6000
+Wire Wire Line
+	3100 6100 3100 6000
+Wire Notes Line
+	2750 6450 7950 6450
+Wire Notes Line
+	7950 6450 7950 3500
+Wire Notes Line
+	2750 3500 7950 3500
+Text Notes 8150 7650 0    59   ~ 0
+01/12/2021
 $EndSCHEMATC
