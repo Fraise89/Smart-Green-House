@@ -59,7 +59,7 @@ if __name__ == '__main__':
         health = True
 
 
-#     affichage de tout ce bordel (image)
+#     affichage de tous ce bordel (image)
       fig1 = plt.figure()
       fig1.add_subplot(2,2,1)
       for i in range(0, nombre_objet):
