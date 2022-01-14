@@ -64,7 +64,7 @@ if __name__ == '__main__':
       fig1.add_subplot(2,2,1)
       for i in range(0, nombre_objet):
           plt.scatter(gravity_point_list[i][1],gravity_point_list[i][0], color='r', marker='+')
-      plt.title("image original")
+      plt.title("image originale")
       plt.gca().axes.get_yaxis().set_visible(False)
       plt.gca().axes.get_xaxis().set_visible(False)
       plt.imshow(image)
